@@ -1,42 +1,13 @@
-let a = 2
-let b = 5
+let a = Number(prompt("Digite um número"))
+let b = Number(prompt("Outro Número"))
 
-function sum(){
-    console.log(a + b)
-}
-function sub(){
-    console.log(a - b)
-}
-
-function mult(){
-    console.log(a * b)
-}
-
-function div(){
-    console.log(a / b)
-}
-
-function sqrtA(){
-    console.log(parseFloat(Math.sqrt(a).toFixed(2)))
-}
-
-function sqrtB(){
-    console.log(parseFloat(Math.sqrt(b).toFixed(2)))
-}
-
-function cbrtA(){
-    console.log(parseFloat(Math.sqrt(a).toFixed(2)))
-}
-
-function cbrtB(){
-    console.log(parseFloat(Math.cbrt(b).toFixed(2)))
-}
-
-sum()
-sub()
-mult()
-div()
-sqrtA()
-sqrtB()
-cbrtA()
-cbrtB()
+console.log(`${a}+${b} = `+ (a + b))
+console.log(`${a}-${b} = `+ (a - b))
+console.log(`${b}-${a} = `+ (b - a))
+console.log(`${a}x${b} = `+a * b)
+console.log(`${a}/${b} = `+ (a / b).toFixed(2))
+console.log(`${b}/${a} = `+ (b / a).toFixed(2))
+console.log(`${a}^${b} = `+ a ** b)
+console.log(`${b}^${a} = `+ b ** a)
+console.log('√'+a+' = '+Math.sqrt(a).toFixed(2))
+console.log('√'+b+' = '+Math.sqrt(b).toFixed(2))
